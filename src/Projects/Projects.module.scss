@@ -1,0 +1,15 @@
+.item {
+    min-height: 100vh;
+}
+.projectsContainer {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 80px;
+}

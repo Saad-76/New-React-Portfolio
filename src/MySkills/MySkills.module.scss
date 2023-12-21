@@ -1,0 +1,15 @@
+.item {
+    min-height: 100vh;
+}
+.skillsContainer {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-bottom: 80px;
+}

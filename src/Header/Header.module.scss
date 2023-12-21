@@ -1,0 +1,94 @@
+@import '../common/sass/variables';
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    opacity: 1;
+    transition: opacity .3s;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    .navItem {
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        transition: .3s;
+        margin: 20px 0;
+        border-radius: 50%;
+        background-color: #2b2a2a;
+        cursor: pointer;
+        .ico {
+            font-size: 19px;
+            position: absolute;
+            pointer-events: none;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 19px;
+            pointer-events: none;
+        }
+        .title {
+            white-space: nowrap;
+            letter-spacing: 2px;
+            font-size: 15px;
+            text-align: center;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0;
+            line-height: 50px;
+            font-weight: 500;
+            transition: all .3s;
+            border-radius: 30px;
+            text-transform: uppercase;
+            padding: 0 25px 0 30px;
+            height: 50px;
+            background-color: $primaryColor;
+            &:hover {
+                opacity: 1;   
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+
+        left: 0;
+        right: auto;
+        bottom: 0;
+        top: auto;
+        transform: none;
+        width: 100%;
+        background: #2b2a2a;
+        padding: 8px;
+        }
+    .header {
+        .navItem {
+            display: flex;
+            align-items: center;
+            background-color: #444;
+            margin: 0;
+            padding: 0;
+            &:hover {
+                background-color: $primaryColor;
+            }
+        }
+        .title {
+            display: none;
+        }
+    } 
+}
+

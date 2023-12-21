@@ -1,0 +1,33 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    color: #fff;
+    background-color: #111;
+}
+button, span, input, textarea {
+    color: #fff;
+}
+ul {
+    list-style-type: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #252525 inset !important;
+    box-shadow: 0 0 0 30px #252525 inset !important;
+    border: 1px solid #111 !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: #fff !important ;
+    border: 1px solid #111 !important;
+}

@@ -1,0 +1,46 @@
+@import '/src/common/sass/variables';
+
+.title {
+    padding: 80px 0;
+    position: relative;
+    .subtitle {
+        color: $primaryColor;
+    }
+    .bgTitle {
+        display: inline-block;
+        font-size: 110px;
+        position: absolute;
+        letter-spacing: 10px;
+        line-height: .3;
+        text-transform: uppercase;
+        font-weight: 800;
+        transform: translate(-50%, 50%);
+        left: 50%;
+        color: hsla(0,0%,100%,.07);
+   }
+}
+.title, .subtitle {
+    white-space: nowrap;
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+
+@media only screen 
+    and (max-width: 750px) {
+        .bgTitle {
+         display: none!important;
+        }
+}
+@media only screen 
+    and (max-width: 430px) {
+        .title {
+            white-space: normal;
+        }
+}
+
